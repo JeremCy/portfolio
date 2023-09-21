@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -7,15 +9,15 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col justify-center align-center items-center space-y-4 flex-1">
-        <Image
-          src="/assets/IMG_0878 (1).PNG"
+        <img
+          src="https://i.ibb.co/VjdvKXD/IMG-0878-1.png"
           alt="memoji"
           width={100}
           height={100}
           className="rounded-full p-2 bg-[#8DA7BE] sm:w-40 sm:h-40 w-20 h-20"
         />
         <h2 className="sm:text-4xl font-bold text-center mt-4 text-2xl">
-          Hi, I am <span className="text-[#8DA7BE]">Jeremie <FontAwesomeIcon icon={faFire} style={{color: "#eb6a00",}} /></span>
+          Hi, I'm <span className="text-[#8DA7BE]">Jeremie <FontAwesomeIcon icon={faFire} style={{color: "#eb6a00",}} /></span>
         </h2>
         <h1 className="sm:text-8xl text-center mt-4 text-4xl">
         Coding the future,<br/> one line at a time.
