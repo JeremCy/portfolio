@@ -15,7 +15,7 @@ export default function Hero() {
           className="rounded-full p-2 bg-[#8DA7BE] sm:w-40 sm:h-40 w-20 h-20"
         />
         <h2 className="sm:text-4xl font-bold text-center mt-4 text-2xl">
-          Hi, I'm <span className="text-[#8DA7BE]">Jeremie <FontAwesomeIcon icon={faFire} style={{color: "#eb6a00",}} /></span>
+          Hi, I am <span className="text-[#8DA7BE]">Jeremie <FontAwesomeIcon icon={faFire} style={{color: "#eb6a00",}} /></span>
         </h2>
         <h1 className="sm:text-8xl text-center mt-4 text-4xl">
         Coding the future,<br/> one line at a time.

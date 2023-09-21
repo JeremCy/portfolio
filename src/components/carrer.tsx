@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+ // eslint-disable-next-line react/no-unescaped-entities
 export default function Carrer() {
     return (
         <div className="text-center space-y-6 p-4">
@@ -25,7 +25,8 @@ export default function Carrer() {
                 <h2 className="text-2xl font-bold text-[#8DA7BE]">Mon aide Appart</h2>
                 <p className="lg:text-xl italic">Develloper full stack</p>
                 <p className="text-sm">Status: abandoned</p>
-                <p>Mon Aide Appart: Empowering students to navigate housing with ease. <br /> Our app's mission is to simplify your student living journey, from locating ideal accommodations to hassle-free rent management, ensuring you focus on what truly matters—your education.</p>
+               
+                <p>Mon Aide Appart: Empowering students to navigate housing with ease. <br /> Our apps mission is to simplify your student living journey, from locating ideal accommodations to hassle-free rent management, ensuring you focus on what truly matters—your education.</p>
                 <Link href={"https://www.youtube.com/watch?v=h0oyVZyoEPE&ab_channel=ETNA.io"} className="font-bold underline text-[#8DA7BE]">See project</Link>
             </div>
         </div>
