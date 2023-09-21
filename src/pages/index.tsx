@@ -4,7 +4,7 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <main className="space-y-36 justify-center">
+    <main className="justify-center">
       <Hero />
       <Carrer />
       <Contact />

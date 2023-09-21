@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Hero() {
 
   return (
-    <div className="flex flex-col justify-center align-center items-center space-y-4 flex-1 xl:space-y-16">
+    <div className="flex flex-col justify-center align-center items-center space-y-4 xl:space-y-16 min-h-screen">
         <img
           src="https://i.ibb.co/VjdvKXD/IMG-0878-1.png"
           alt="memoji"

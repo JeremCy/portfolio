@@ -5,11 +5,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body id="hero" className='min-h-screen space-y-36'>
+      <body id="hero" className=''>
         <div className='sticky top-0 z-50'>
           <Navbar />
         </div>   
-        <div className='flex-1 justify-center flex'>
+        <div className='justify-center flex '>
           <Main />
         </div>
            
