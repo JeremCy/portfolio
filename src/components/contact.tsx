@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="p-4">
+    <div className="p-4 w-1/2 mx-auto">
       <h1 className="text-4xl font-bold sm:text-6xl text-center">Contact</h1>
       <form action="">
         <div className="flex flex-col space-y-2">

@@ -6,3 +6,7 @@
     background-color: #FFECD1;
     text-color: #000000;
 }
+nav {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    }
