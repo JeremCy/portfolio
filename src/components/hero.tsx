@@ -28,7 +28,7 @@ export default function Hero() {
 
         </p>
 
-        <Link href={'#'} className='p-4 bg-black rounded-full text-white xl:text-xl'>Connect with me</Link>
+        <Link href={'#contact'} className='p-4 bg-black rounded-full text-white xl:text-4xl hover:bg-[#8DA7BE] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300'>Connect with me</Link>
 
     </div>
   );
