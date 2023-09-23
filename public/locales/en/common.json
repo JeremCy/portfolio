@@ -1,3 +1,46 @@
 {
-    
+    "hero": {
+        "hi": "Hello, I'm ",
+        "title" : "Coding the future, one line at a time.",
+        "subtitle": {
+            "one": "a ",
+            "two": "based in ",
+            "three": "I specialize in building",
+            "four": "and ",
+            "five": "for the web."
+        },
+        "button": "Get in touch"
+    },
+    "carrer": {
+        "title": "Work",
+        "ka2b": {
+            "date":"Date: Ongoing",
+            "context":"As a BI consultant, my work revolves around helping businesses harness the power of data for improved decision-making.I specialize in creating data-driven solutions, collaborating with diverse teams to decipher data complexities, and delivering actionable insights that drive organizational growth. My role combines technical prowess, business acumen, and effective communication to enable data-driven transformations within companies."
+        }      
+    },
+    "project":{
+        "title": "Project",
+        "cta": "See project",
+        "1":{     
+            "status":"Status: finish",
+            "context":"Fidely have for goal to Revolutionize the shopping experience with an all-in-one loyalty application. Unlock the potential of targeted marketing campaigns and gain valuable insights through powerful analytics."            
+        },
+        "2":{
+            "status":"Status: abandoned",
+            "context":"Mon Aide Appart: Empowering students to navigate housing with ease. Our apps mission is to simplify your student living journey, from locating ideal accommodations to hassle-free rent management, ensuring you focus on what truly matters—your education."        
+        }
+    },
+    "contact":{
+        "title":"Contact me",
+        "name":"Name",
+        "message":"Message",
+        "cta":"Send"
+    },
+    "nav":{
+        "home":"Home",
+        "work":"Work",
+        "contact":"Contact",
+        "resume":"Resume"
+    }
 }
+    

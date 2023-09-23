@@ -1,3 +1,45 @@
 {
-    
+    "hero": {
+        "hi": "Bonjour, je suis",
+        "title" : "Coder le future, line par line.",
+        "subtitle": {
+            "1": "un ",
+            "2": "située à ",
+            "3": "Je suis spécialisé dans le développement ",
+            "4": "et ",
+            "5": "pour les entreprises et les particuliers."
+        },
+        "button": "Contactez-moi"
+    },
+    "carrer": {
+        "title": "Emploie",
+        "ka2b": {
+            "date":"emploie actuel"
+        },
+        "context":"En tant que consultant BI, mon travail consiste à aider les entreprises à exploiter la puissance des données pour améliorer la prise de décision. Je me spécialise dans la création de solutions basées sur les données, la collaboration avec diverses équipes pour déchiffrer la complexité des données et la fourniture d'informations exploitables qui stimulent la croissance organisationnelle. Mon rôle combine prouesses techniques, sens des affaires et communication efficace pour permettre des transformations basées sur les données au sein des entreprises."
+    },
+    "project":{
+        "title": "Projet",
+        "cta": "Voir le projet",
+        "1":{     
+        "status":"Status: en cours",
+        "context":"Fidely a pour objectif de révolutionner l'expérience d'achat avec une application de fidélité tout-en-un. Libérez le potentiel des campagnes marketing ciblées et obtenez des informations précieuses grâce à des analyses puissantes."
+        },
+        "2":{
+            "status":"Status: abandoner",
+            "context":"Mon Aide Appart : Permettre aux étudiants de s'orienter facilement dans leur logement. La mission de notre application est de simplifier votre parcours de vie étudiante, de la recherche du logement idéal à la gestion des loyers sans tracas, en vous assurant de vous concentrer sur ce qui compte vraiment : votre éducation."        
+        }
+    },
+    "contact":{
+        "title":"Me contacter",
+        "name":"Nom",
+        "message":"Message",
+        "cta":"Envoyer"
+    },
+    "nav":{
+        "home":"Home",
+        "work":"Projet et carriere",
+        "contact":"Contact",
+        "resume":"CV"
+    }
 }
