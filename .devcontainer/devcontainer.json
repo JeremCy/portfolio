@@ -1,0 +1,33 @@
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+  "name": "website",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  // Uncomment the next line to run commands after the container is created.
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000, 8025],
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "waderyan.gitblame",
+        "codezombiech.gitignore",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.js-debug-nightly",
+        "esbenp.prettier-vscode",
+        "sibiraj-s.vscode-scss-formatter",
+        "bradlc.vscode-tailwindcss",
+        "ms-vscode.vscode-typescript-next",
+        "ms-azuretools.vscode-docker",
+        "PsykoSoldi3r.vscode-git-flow",
+        "donjayamanne.git-extension-pack",
+        "GitHub.copilot",
+        "Prisma.prisma",
+        "mhutchie.git-graph"
+      ]
+    }
+  }
+}
