@@ -6,7 +6,7 @@ export const i18n = {
       en: "en",
       fr: "fr",
     },
-    localeDetection: false,
+    localeDetection: true,
   } as const;
   
   export type Locale = (typeof i18n)["locales"][number];

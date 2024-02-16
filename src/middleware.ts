@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-import { i18n } from "./i18n.config";
+import { i18n } from "../i18n.config";
 
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
@@ -15,7 +15,7 @@ function getLocale(request: NextRequest): string | undefined {
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   const locale = matchLocale(languages, locales, i18n.defaultLocale);
 
-  return 'fr';
+  return locale;
 }
 
 export function middleware(request: NextRequest) {

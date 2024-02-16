@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { i18n } from "@/i18n.config";
-import Icontranslate from "@public/icon/translate.svg";
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
@@ -18,9 +17,14 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <ul className="flex gap-x-3 items-center">
-      <Image  className="m-3 opacity-50			" src={Icontranslate} alt="" />
-      {i18n.locales.map((locale) => {
+  <div className="dropdown">
+    <div tabIndex={0} role="button" className="btn btn-ghost">
+      <FontAwesomeIcon icon={faGlobe} />
+    </div>
+    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <li className="">
+        <ul>
+        {i18n.locales.map((locale) => {
         return (
           <li key={locale}>
             <Link href={redirectedPathName(locale)} className="">
@@ -29,6 +33,9 @@ export default function LocaleSwitcher() {
           </li>
         );
       })}
+      </ul>
+      </li>
     </ul>
+  </div>
   );
 }

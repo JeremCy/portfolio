@@ -1,12 +1,12 @@
 import { Locale, i18n } from "@/i18n.config";
-import "@/app/globals.css";
+import "@styles/globals.css";
 import type { Metadata } from "next";
 import Navbar from "@components/layout/navbar";
 import Footer from "@components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "KA2B",
-  description: "Love your data",
+  title: "Jeremie Cyrille",
+  description: "web developper",
 };
 
 export async function generateStaticParams() {
@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang} data-theme="light">
       <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>  
       <meta property="description" content="web developer" />
       <meta property="og:description" content="web developer" />
       <meta property="og:url" content="jeremie-cyrille.com"/>
@@ -32,10 +33,9 @@ export default function RootLayout({
       <meta property="twitter:card" content="summary"/>
       <title>Jérémie Cyrille</title>
       </head>
-      <body
-      >
+      <body className="min-h-screen items-stretch flex flex-col">
           <Navbar lang={params.lang} />
-          <main className="flex-1 justify-center flex p-4">{children}</main>      
+          <main className="w-full flex-1">{children}</main>      
           <Footer lang={params.lang} />
       </body>
     </html>

@@ -1,37 +1,36 @@
-import { Locale } from "@/i18n.config";
 import { getDictionary } from "@libs/dictionaries";
 import Link from "next/link";
 
-export default async function Carrer({ lang }: { lang: Locale }) {
-    const dict = await getDictionary(lang);
+export default async function Carrer({ dictionary }: { dictionary: Awaited<ReturnType<typeof getDictionary>>["carrer"] }) {
     return (
-        <div className="text-center space-y-6 p-4 w-1/2 mx-auto">
-            <h1 className="text-4xl font-bold sm:text-6xl"></h1>
-            <div id="carrer" className="grid grid-cols-1 sm:grid-cols-2  sm:space-y-4">     
-                <div className="text-left">
-                    <h2 className="text-2xl font-bold text-[#8DA7BE]"></h2>
-                    <p className="lg:text-xl italic"></p>
-                    <p className="text-sm"></p>
-                    <p></p>
-                </div>
-            </div>
-            <h1 className="text-4xl font-bold sm:text-6xl"></h1> 
-            <div id="carrer" className="grid grid-cols-1 sm:grid-cols-2  justify-center ">     
-                <div className="text-left">
-                    <h2 className="text-2xl font-bold text-[#8DA7BE]"></h2>
-                    <p className="lg:text-xl italic"></p>
-                    <p className="text-sm"></p>
-                    <p></p>
-                    <Link href={"https://fidelcly.com"} className="font-bold underline text-[#8DA7BE]"></Link>
-                </div>
-                <div className="text-left">
-                    <h2 className="text-2xl font-bold text-[#8DA7BE]">Mon aide Appart</h2>
-                    <p className="lg:text-xl italic">Develloper full stack</p>
-                    <p className="text-sm"></p>
-                    <p></p>
-                    <Link href={"https://www.youtube.com/watch?v=h0oyVZyoEPE&ab_channel=ETNA.io"} className="font-bold underline text-[#8DA7BE]"></Link>
-                </div>
+        // get array length off of dictionary.carrers
+        // if length is 1, use grid-cols-1
+        // if length is 2, use grid-cols-2
+
+        <div className="container space-y-6 mx-auto text-center lg:text-start">
+            <h1 className="text-5xl font-bold">{dictionary.title}</h1>
+            <p className="text-xl">{dictionary.subtitle}</p>
+            <div className={dictionary.carrers.length >= 1 ? "grid-cols-1" : "lg:grid-cols-2" + " grid "}>
+            {dictionary.carrers.map((carrer, index) => (
+                <CarrerCard key={index} {...carrer} />
+            ))}
             </div>
         </div>
+    )
+}
+
+function CarrerCard(carrer: Awaited<ReturnType<typeof getDictionary>>["carrer"]["carrers"][0]) {
+    return (
+        <div className="card lg:card-side bg-base-100 shadow-xl flex text-start">
+        <div className="card-body">
+          <h2 className="card-title">{carrer.title}</h2>
+          <p>{carrer.company}</p>
+            <p>{carrer.date}</p>
+            <p>{carrer.description}</p>
+          <div className="card-actions justify-end">
+            <Link className="btn btn-primary" href={carrer.cta.url}>{carrer.cta.title}</Link>
+          </div>
+        </div>
+      </div>
     )
 }
