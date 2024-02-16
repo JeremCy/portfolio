@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { type getDictionary } from "@libs/dictionaries";
 import { contact } from "@/src/types/contact";
 import { ContactSubmit } from "@/src/utils/contact";
-
+import toast from "react-hot-toast";
 
 export default function Contact ({
   dictionary,
@@ -15,9 +15,9 @@ export default function Contact ({
     const contact = await ContactSubmit(data);
     // if the return status is 200, toast success else toast error
     if (contact.status === 200) {
-
+      toast.success("Message sent");
     } else {
-
+      toast.error("Message not sent");
     }
   });
 

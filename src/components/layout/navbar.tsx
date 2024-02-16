@@ -9,7 +9,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 export default async function Navbar ({ lang }: { lang: Locale }) {
     const dict = await getDictionary(lang);
     return (
-        <nav className="navbar bg-base-100">
+        <nav className="navbar">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

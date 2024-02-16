@@ -24,7 +24,9 @@ function ProjectsCard(project: Awaited<ReturnType<typeof getDictionary>>["projec
           <p>{project.status}</p>
             <p>{project.context}</p>
           <div className="card-actions justify-end">
+            {project.cta.url.length > 0 && (
             <Link className="btn btn-primary" href={project.cta.url}>{project.cta.title}</Link>
+            )}
           </div>
         </div>
       </div>

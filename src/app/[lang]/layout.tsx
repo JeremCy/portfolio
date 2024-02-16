@@ -3,6 +3,7 @@ import "@styles/globals.css";
 import type { Metadata } from "next";
 import Navbar from "@components/layout/navbar";
 import Footer from "@components/layout/footer";
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Jeremie Cyrille",
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className="min-h-screen items-stretch flex flex-col">
           <Navbar lang={params.lang} />
           <main className="w-full flex-1">{children}</main>      
+          <Toaster />
           <Footer lang={params.lang} />
       </body>
     </html>

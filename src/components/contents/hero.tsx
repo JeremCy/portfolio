@@ -7,17 +7,15 @@ export default async function Hero({
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["home"];
 }) {
-  
-
   return (
     <div className="hero">
     <div className="hero-content flex flex-col text-center">
     <img
           src="https://i.ibb.co/VjdvKXD/IMG-0878-1.png"
           alt="memoji"
-          width={100}
-          height={100}
-          className="rounded-full p-2 bg-[#8DA7BE] sm:w-40 sm:h-40 w-20 h-20"
+          width={300}
+          height={300}
+          className="rounded-full p-2"
         />
         <h1 className="text-5xl font-bold">{dictionary.title}</h1>
         <p className="py-6">
