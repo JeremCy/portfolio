@@ -26,12 +26,12 @@ export async function POST(request: Request) {
       Messages:  [
         {
           From: {
-            Email: process.env.BOT_MAIL || "jeremie.cyrille@icloud.com",
+            Email: process.env.BOT_MAIL || "bot@jeremie-cyrille.com",
             Name: `${firstName} ${lastName}`,
           },
           To: [
             {
-              Email: process.env.CONTACT_MAIL || "jeremie.cyrille@icloud.com",
+              Email: process.env.CONTACT_MAIL || "contact@jeremie-cyrille.com",
               Name: "Contact Form",
             },
           ],
