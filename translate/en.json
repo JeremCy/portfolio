@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "title": "Jérémie Cyrille",
+    "links":[
+      {
+        "title": "About me",
+        "url": "/about"
+      },
+      {
+        "title": "Projects",
+        "url": "/projects"
+      }    
+    ],
+      "cta": {
+        "title": "Contactez-moi",
+        "url": "/contact"
+      }
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "newsletter": "Newsletter",
+    "newsletter-description": "Inscrivez-vous à notre newsletter pour recevoir les dernières nouvelles et mises à jour",
+    "newsletter-email": "Votre email",
+    "newsletter-submit": "S'inscrire"
+  },
+  "home": {
+    "hi": "Bonjour, je suis Jeremie Cyrille",
+    "title": "Coder le future, line par line.",
+    "subtitle": "Bonjour, je suis Jeremie Cyrille, un développeur web basé à Paris. Je crée des applications web performantes et des sites web pour les entreprises et les particuliers.",
+    "cta": {
+      "title": "Voir mes projets",
+      "url": "/en/projects"
+    }
+  },
+  "carrer": {
+    "title": "Emploie",
+    "subtitle": "Je suis à la recherche d'un emploi en tant que développeur web. Je suis passionné par la programmation et je suis toujours à la recherche de nouveaux défis. Si vous avez un projet ou une offre d'emploi, n'hésitez pas à me contacter.",
+    "cta": "Contactez-moi",
+    "carrers": [
+      {
+        "title": "Business Intelligence Consultant",
+        "company": "Ka2b Associates",
+        "date": "emploi actuel",
+        "description": "Développement de plugin et site web lier a l'application SAP.",
+        "cta": {
+          "title": "En savoir plus",
+          "url": "https://www.ka2b.com/"
+        
+        }
+      }
+    ]
+  },
+  "project": {
+    "title": "Projet",
+    "subtitle": "Voici quelques-uns des projets sur lesquels j'ai travaillé récemment. Si vous avez un projet en tête, n'hésitez pas à me contacter.",
+    "projects":[
+      {
+        "title": "Fidely",
+        "status": "Status: en cours",
+        "context": "Fidely a pour objectif de révolutionner l'expérience d'achat avec une application de fidélité tout-en-un. Libérez le potentiel des campagnes marketing ciblées et obtenez des informations précieuses grâce à des analyses puissantes.",
+        "cta": {
+          "title": "En savoir plus",
+          "url": "https://fidely.fr/"
+        }
+      },
+      {
+        "title": "Mon Aide Appart",
+        "status": "Status: abandoner",
+        "context": "Mon Aide Appart : Permettre aux étudiants de s'orienter facilement dans leur logement. La mission de notre application est de simplifier votre parcours de vie étudiante, de la recherche du logement idéal à la gestion des loyers sans tracas, en vous assurant de vous concentrer sur ce qui compte vraiment : votre éducation.",
+        "cta": {
+          "title": "En savoir plus",
+          "url": ""
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": "On vous écoute ... ",
+    "description": "",
+    "form": {
+      "firstname": {
+        "label": "Prénom",
+        "placeholder": "Votre prénom"
+      },
+      "lastname": {
+        "label": "Nom",
+        "placeholder": "Votre nom"
+      },
+      "subject": {
+        "label": "Sujet",
+        "placeholder": "Sujet de votre message"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Votre email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Votre message"
+      },
+      "submit": "Envoyer",
+      "cancel": "Annuler"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+#-------------------------------------------------------------------------------------------------------------
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
+#-------------------------------------------------------------------------------------------------------------
+
+version: '3'
+services:
+  dev:
+    image: 16nsk/devcontainers
+    command: sleep infinity
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - "${BACKEND_PORT:-3000}:3000"
+
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'
+    ports:
+      - "${FORWARD_MAILHOG_PORT:-8025}:8025"
+      - "${FORWARD_MAILHOG_PORT:-1025}:1025"
+
+  db:
+    image: postgres:12.2-alpine
+    logging:
+      driver: 'none'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: website
+    ports:
+      - "${FORWARD_DB_PORT:-5432}:5432"
+  adminer:
+    image: adminer
+    ports:
+      - "${FORWARD_ADMINER_PORT:-8080}:8080"

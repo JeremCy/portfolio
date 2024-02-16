@@ -1,12 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-    background-color: #FFECD1;
-    text-color: #000000;
-}
-nav {
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    }
+html {
+    @apply h-full;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    
+  }
+  body {
+    @apply h-full;
+  }
+  div#__next {
+    @apply h-full;
+  }
+  main {
+    @apply h-full;
+  }
