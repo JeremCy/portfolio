@@ -22,7 +22,7 @@
     "node-mailjet": "^6.0.6",
     "react": "^19",
     "react-dom": "^19",
-    "react-hook-form": "^7.54.0",
+    "react-hook-form": "^7.54.1",
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
